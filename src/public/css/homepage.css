@@ -1,0 +1,53 @@
+
+
+#name {
+    font-weight: 800;
+    font-size: 3.25em;
+}
+
+#info-content {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.dvdr {
+    margin: 1rem auto;
+    font-weight: 400;
+    width: 30%;
+    border-width: 1rem;
+    border-color: black;
+    color: black;
+    background-color: black;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    filter: drop-shadow(3px 3px 2px grey);
+
+}
+
+.para {
+    text-align: left;
+}
+
+
+#main-content-projects {
+    border-left: solid 1px black;
+}
+
+#project-ctn {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.project-badge {
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
