@@ -1,0 +1,9 @@
+This website is a place where users can exchanges their used books. Some functinalities of the website are:
+    - Users can search for books; 
+    - They can choose one book leave a message for the owner;
+    - Owners can reply to these messages;
+This projects applies a range of technologies:
+    - Front-end: HTML, CSS, Vue.js, Javascript,
+    - Back-end: MySQL, Express.js
+
+The project is created to practise sending messages between users. Although the project meets the requirements as it was conducted, it is not a complete application. There can be development to the web application. They are for the front-end with more web pages which play different roles. This is to complete other functionality of a standard website, for example, there should be a homepage, and pages for specific information of books.

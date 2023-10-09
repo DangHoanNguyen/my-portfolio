@@ -4,18 +4,33 @@ import initAdminWebRoutes from "./route/admin.js"
 import configViewEngine from "./config/viewEngine.js";
 import bodyParser from "body-parser";
 require("dotenv").config();
-const mysql = require("mysql")
+const mysql = require("mysql");
+const cookieParser = require('cookie-parser');
+const fs = require('file-system');
+
+var session = require("express-session");
 
 let app = express();
 
-const connection = mysql.createConnection({
+const connection = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    database: 'mydata'
+    database: 'myportfolio'
 });
 
-connection.connect();
+app.use(function(req, res, next) {
+    req.pool = connection;
+    next(); 
+});
 
+app.use(express.json());
+app.use(cookieParser());
+app.use(session({
+    secret: 'loveurlife',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false }
+}));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

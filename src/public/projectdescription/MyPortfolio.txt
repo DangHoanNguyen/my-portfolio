@@ -1,0 +1,7 @@
+I create this website as a place to record all my work in Web developments, Application development and other fields. This is also the place where I practise some front-end frameworks: Vue.js and React.js. By creating 2 different user interfaces which applied either Vue.js or React.js, I demonstrate my skills of those.
+The website is devided into 3 section: "About me", "My projects" and "Contact". "About me" plays the role of an overview of my career and objectives. Menanwhile, "My projects" records all projects that I have worked on. And "Contacts" store URLs to my socials and contact detail.
+The project applies a range of technologies. Specifically:
+    - Front-end technologies: HTML, CSS, Bootstrap 5.0, Vue.js, React.js
+    - Back-end technologies: Express.js and MySQL
+
+In conclusion, this demo website is the guide to develop the final personal online protfolio. Its structure is considered adequate; however, there are still weaknesses in animation and adaptability to devices that need improving.

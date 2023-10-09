@@ -1,0 +1,2 @@
+This is a guided project wit the support of a web development seiries on youtube.
+The projects focus mostly on the back-end with the use of mysql and Express.js.

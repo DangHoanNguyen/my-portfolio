@@ -1,0 +1,2 @@
+This is created to practise HTML and CSS. The page is quite basic with minimal information.
+This project is still under progress. In the future, javascript and other technologies will be included to make the UI dynamic and the UX more seamless.

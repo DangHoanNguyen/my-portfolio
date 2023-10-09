@@ -1,0 +1,3 @@
+This project is created as an extension to coursework (it is not itself a coursework).
+The application is created using Python and its library "tkinter".
+This is the first project that I seriously consider and spend time on designing the user interface. However, it is not considered a good user interface for some reasons.

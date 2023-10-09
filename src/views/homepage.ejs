@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/homepage.css" rel="stylesheet">
+    <link media="screen and (min-width: 840px)" href="/css/homepage.css" rel="stylesheet">
+    <link media="screen and (max-width: 840px)" href="/css/homepagephone.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <script src="/javascript/homepage.js" defer></script>
@@ -26,7 +27,7 @@
                     <a class="nav-link" href="#" v-on:click="viewPortfolio">My projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#" v-on:click="viewContact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -37,14 +38,17 @@
                     <h1 id="name">Dang Hoan Nguyen</h1>
                     <hr class="small dvdr" />
                     <h3>Web Developer</h3>
-                    <br/>
-                    <br/>
-                    
-                    <p class="para">I am enthusiatic of developing applications with outstanding user interface and well-qualified user experience.</p>
-                    <p class="para">With that in mind, I have already conducted a range of projects to develop my skills and knowledge. After long time of improvement, I gain knowledge and experience with, not only, multiple frameworks but also technologies.
+                    <br />
+                    <br />
+
+                    <p class="para">I am enthusiatic of developing applications with outstanding user interface and
+                        well-qualified user experience.</p>
+                    <p class="para">With that in mind, I have already conducted a range of projects to develop my skills
+                        and knowledge. After long time of improvement, I gain knowledge and experience with, not only,
+                        multiple frameworks but also technologies.
                         Thanks to that, I can now develop applications with a range of distinctive functioning...
                     </p>
-                   
+
 
                 </div>
             </template>
@@ -53,32 +57,38 @@
                     <div id="vertical-menu-projects" class="col col-4">
                         <div v-for="p in projects"></div>
 
-                        <!--Test layout-->
+
                         <nav class="navbar justify-content-center fs-3 font-weight-bold">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <button type="button" class="nav-link project-badge col-12">Shopify website for a start up lorem ipsjum</button>
+
+                                <li v-for="p in projects">
+                                    <button type="button" class="nav-link project-badge col-12" v-bind:value="p.id"
+                                        v-on:click="loaddescription">{{p.name}}</button>
                                 </li>
-                                <li class="nav-item">
-                                    <button type="button" class="nav-link project-badge col-12">Project 1</button>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="nav-link project-badge">Project 1</button>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="nav-link project-badge">Project 1</button>
-                                </li>
+
                             </ul>
                         </nav>
                     </div>
                     <div id="main-content-projects" class="col col-8">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsam assumenda accusamus totam
-                        unde fugit facere, minus, illo sit quas ea explicabo sequi ab error provident natus quia
-                        consequatur vitae?
+                        <h1 id="project-name"></h1>
+                        <strong id="temp">Choose a project for details</strong>
+                        <br>
+                        <p id="gitrepo"></p>
+                        <br>
+                        <img src="#" alt="image" id="project-pic">
+                        <br>
+                        <p id="description"></p>
                     </div>
                 </div>
             </template>
-            <template v-if="cur == 2"></template>
+            <template v-if="cur == 2">
+                <div id="contact-ctn">
+                    <p> <strong>Github:</strong> <a v-bind:href="github">{{github}}</a></p>
+                    <p><strong>LinkedIn:</strong> <a v-bind:href="linkedin">{{linkedin}}</a></p>
+                    <p><strong>Upwork:</strong> <a v-bind:href="upwork">{{upwork}}</a></p>
+                    <p><strong>Phone Number: </strong>{{phoneNo}}</p>
+                </div>
+            </template>
         </div>
     </div>
 </body>

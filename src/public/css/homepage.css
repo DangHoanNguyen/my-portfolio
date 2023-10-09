@@ -36,12 +36,18 @@
 
 #main-content-projects {
     border-left: solid 1px black;
+    height: device-height;
+    overflow-y: scroll;
 }
 
-#project-ctn {
+#project-ctn, #contact-ctn {
     width: 80%;
     margin: auto;
     margin-top: 50px;
+}
+
+#contact-ctn {
+    width: 50%;
 }
 
 .project-badge {
@@ -50,4 +56,18 @@
     border-radius: 20px;
     margin-top: 10px;
     padding: 5px;
+    
+}
+
+#gitrepo {
+    text-decoration: underline;
+    font-weight: bold;
+    color: grey;
+}
+
+#project-pic {
+    display: none;
+    filter: drop-shadow(3px 3px 2px grey);
+    max-width: 80%;
+    margin: 0px auto;
 }
