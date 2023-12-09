@@ -1,0 +1,5 @@
+This website helps people with the same hobbies or objectives to find their suitable club.
+There are three levels of privilege for 3 groups of users: general users, club managers, application administrators.
+Technologies:
+- Front-end: HTML, CSS, Bootstrap v5.0, Vue.js v2.0
+- Back-end: Node.js, MySQL

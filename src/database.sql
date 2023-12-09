@@ -10,15 +10,17 @@ CREATE TABLE projects (
     description VARCHAR(100),
     githubRepo VARCHAR(100),
     image VARCHAR(100),
+    url VARCHAR(100),
     PRIMARY KEY (id)
 );
 
-INSERT INTO projects (name, description, githubRepo, image) 
-VALUES ("MY PORTFOLIO", "src\\public\\projectdescription\\MyPortfolio.txt", "https://github.com/DangHoanNguyen/my-portfolio", "/image/MyPortfolio.png"),
-("A WEBSITE TO MAKE APPOINTMENT WITH A HOSITAL", "src\\public\\projectdescription\\HospitalAppointment.txt", "https://github.com/DangHoanNguyen/Login_logout_WebProject-Guided-", "/image/HostpitalAppointment.png"),
-("THE PHO RESTAURANT", "src\\public\\projectdescription\\ThePhoRestaurant.txt", "https://github.com/DangHoanNguyen/ThePhoRestaurant", "/image/ThePhoRestaurant.png"),
-("PERSONAL FINANCE MANAGEMENT", "src\\public\\projectdescription\\FinanceManagement.txt", "https://github.com/DangHoanNguyen/FinanceControl", "/image/FinanceManagement.png"),
-("OLD BOOKS MARKET PLACE", "src\\public\\projectdescription\\SellingOldBook.txt","https://github.com/DangHoanNguyen/SellingOldBook", "#");
+INSERT INTO projects (name, description, githubRepo, image, url) 
+VALUES ("MY PORTFOLIO", "src\\public\\projectdescription\\MyPortfolio.txt", "https://github.com/DangHoanNguyen/my-portfolio", "/image/MyPortfolio.png", "/"),
+("CLUB FINDER'S", "src\\public\\projectdescription\\Clubfinders.txt", "https://github.com/DangHoanNguyen/ClubFinder", "/image/Clubfinder.jpg", "https://clubfinders.onrender.com/"),
+("OLD BOOKS MARKET PLACE", "src\\public\\projectdescription\\SellingOldBook.txt","https://github.com/DangHoanNguyen/SellingOldBook", "#", "#"),
+("A WEBSITE TO MAKE APPOINTMENT WITH A HOSITAL", "src\\public\\projectdescription\\HospitalAppointment.txt", "https://github.com/DangHoanNguyen/Login_logout_WebProject-Guided-", "/image/HostpitalAppointment.png", "#"),
+("THE PHO RESTAURANT", "src\\public\\projectdescription\\ThePhoRestaurant.txt", "https://github.com/DangHoanNguyen/ThePhoRestaurant", "/image/ThePhoRestaurant.png", "#"),
+("PERSONAL FINANCE MANAGEMENT", "src\\public\\projectdescription\\FinanceManagement.txt", "https://github.com/DangHoanNguyen/FinanceControl", "/image/FinanceManagement.png", "#");
 
 
 
@@ -29,7 +31,7 @@ CREATE TABLE mydata (
     github VARCHAR(100),
     linkedin VARCHAR(100),
     upwork VARCHAR(100),
-    phoneNO VARCHAR(10)
+    phoneNO VARCHAR(20)
 );
 
 INSERT INTO mydata (github, linkedin, upwork, phoneNO)

@@ -59,7 +59,7 @@
     
 }
 
-#gitrepo {
+#gitrepo, #weburl {
     text-decoration: underline;
     font-weight: bold;
     color: grey;
