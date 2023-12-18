@@ -61,7 +61,7 @@ const home = new Vue({
                     for (let i = 0; i < home.projects.length; i++){
                         if (home.projects[i]["id"] == pid) {
                             document.getElementById("project-name").innerText = home.projects[i]["name"];
-                            home.cur_project_gitrepo = home.projects[i]["githubRepo"];
+                            home.cur_project_gitrepo = home.projects[i]["githubrepo"];
                             home.cur_project_url = home.projects[i]["url"];
 
                             let parent = document.getElementById("gitrepo");
