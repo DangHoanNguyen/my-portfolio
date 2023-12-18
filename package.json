@@ -19,7 +19,8 @@
     "file-system": "^2.2.2",
     "filesystem": "^1.0.1",
     "mysql": "^2.18.1",
-    "mysql2": "^3.6.5"
+    "mysql2": "^3.6.5",
+    "pg": "^8.11.3"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
